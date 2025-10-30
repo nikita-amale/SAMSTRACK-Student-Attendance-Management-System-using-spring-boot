@@ -1,7 +1,5 @@
 package com.tka.sams.api.controller;
-
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +8,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.tka.sams.api.entity.AttendanceRecord;
 import com.tka.sams.api.entity.Student;
 import com.tka.sams.api.entity.Subject;
@@ -35,9 +32,6 @@ public class AttendanceController {
 
 	@Autowired
 	private SubjectService subjectService;
-
-	@Autowired
-	private StudentService studentService;
 
 	@GetMapping("/get-all-attendance-records")
 	public List<AttendanceRecord> getAllAttendanceRecords() {
@@ -77,8 +71,7 @@ public class AttendanceController {
 		attendanceRecord.setTime(request.getTime());
 		attendanceRecord.setStudents(request.getStudents());
 		attendanceRecord.setNumberOfStudents(request.getStudents().size());
-
-		System.out.println(attendanceRecord);
+        System.out.println(attendanceRecord);
 		return attendanceRecordService.saveAttendance(attendanceRecord);
 	}
 }

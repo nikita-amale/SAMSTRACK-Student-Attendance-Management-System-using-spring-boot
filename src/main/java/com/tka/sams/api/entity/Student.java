@@ -1,5 +1,4 @@
 package com.tka.sams.api.entity;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -40,7 +39,5 @@ public class Student {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-    
-    
-}
+    }
 

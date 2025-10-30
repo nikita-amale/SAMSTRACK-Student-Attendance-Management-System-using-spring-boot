@@ -12,7 +12,6 @@ import org.springframework.stereotype.Repository;
 import com.tka.sams.api.entity.Student;
 
 @Repository
-
 public class StudentDao {
 
 	@Autowired
