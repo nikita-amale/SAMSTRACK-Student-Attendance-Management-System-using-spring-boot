@@ -34,3 +34,39 @@ It provides role-based access for administrators and faculty to manage, record, 
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/nikita-amale/SAMSTRACK-Student-Attendance-Management-System-using-spring-boot.git
+
+2️⃣ Import into IDE
+
+Open the project in IntelliJ IDEA or Eclipse.
+
+Wait for dependencies to load.
+
+3️⃣ Configure Database
+
+Create a MySQL database (e.g., samstrack_db).
+
+Update application.properties:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/samstrack_db
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+4️⃣ Run the Application
+mvn spring-boot:run
+
+
+or run SamstrackApplication.java from your IDE.
+
+5️⃣ Access the App
+
+Open browser → http://localhost:8080
+
+🧑‍💻 Contributors
+
+Nikita Amale – Developer & Maintainer
+
+🪪 License
+
+This project is licensed under the MIT License – feel free to use and modify it.
